@@ -33,6 +33,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
+            textBox2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -77,12 +78,21 @@
             textBox1.TabIndex = 3;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(349, 254);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(414, 32);
+            textBox2.TabIndex = 4;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(846, 466);
+            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -103,5 +113,6 @@
         private Label label1;
         private PictureBox pictureBox1;
         private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
