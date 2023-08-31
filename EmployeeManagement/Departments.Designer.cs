@@ -32,13 +32,13 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departments));
-            button2 = new Button();
-            button1 = new Button();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            EditBtn = new Button();
+            AddBtn = new Button();
+            DepList = new Guna.UI2.WinForms.Guna2DataGridView();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             label3 = new Label();
-            textBox1 = new TextBox();
+            DepNameTb = new TextBox();
             label2 = new Label();
             label1 = new Label();
             panel1 = new Panel();
@@ -51,7 +51,8 @@
             pictureBox4 = new PictureBox();
             label8 = new Label();
             pictureBox5 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            btnDelete = new Button();
+            ((System.ComponentModel.ISupportInitialize)DepList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -60,38 +61,40 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
-            // button2
+            // EditBtn
             // 
-            button2.BackColor = Color.PaleTurquoise;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = Color.Black;
-            button2.ImageAlign = ContentAlignment.TopCenter;
-            button2.Location = new Point(248, 522);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 53);
-            button2.TabIndex = 54;
-            button2.Text = "Update";
-            button2.UseVisualStyleBackColor = false;
+            EditBtn.BackColor = Color.PaleTurquoise;
+            EditBtn.FlatAppearance.BorderSize = 0;
+            EditBtn.FlatStyle = FlatStyle.Flat;
+            EditBtn.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            EditBtn.ForeColor = Color.Black;
+            EditBtn.ImageAlign = ContentAlignment.TopCenter;
+            EditBtn.Location = new Point(248, 522);
+            EditBtn.Name = "EditBtn";
+            EditBtn.Size = new Size(94, 53);
+            EditBtn.TabIndex = 54;
+            EditBtn.Text = "Update";
+            EditBtn.UseVisualStyleBackColor = false;
+            EditBtn.Click += EditBtn_Click;
             // 
-            // button1
+            // AddBtn
             // 
-            button1.BackColor = Color.Teal;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(95, 522);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 53);
-            button1.TabIndex = 53;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = false;
+            AddBtn.BackColor = Color.Teal;
+            AddBtn.FlatStyle = FlatStyle.Flat;
+            AddBtn.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddBtn.ForeColor = Color.White;
+            AddBtn.Location = new Point(95, 522);
+            AddBtn.Name = "AddBtn";
+            AddBtn.Size = new Size(94, 53);
+            AddBtn.TabIndex = 53;
+            AddBtn.Text = "Add";
+            AddBtn.UseVisualStyleBackColor = false;
+            AddBtn.Click += AddBtn_Click;
             // 
-            // guna2DataGridView1
+            // DepList
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            DepList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -99,9 +102,9 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            DepList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            DepList.ColumnHeadersHeight = 25;
+            DepList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -109,36 +112,38 @@
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(443, 422);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.RowTemplate.Height = 29;
-            guna2DataGridView1.Size = new Size(1333, 574);
-            guna2DataGridView1.TabIndex = 50;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            DepList.DefaultCellStyle = dataGridViewCellStyle3;
+            DepList.GridColor = Color.FromArgb(231, 229, 255);
+            DepList.Location = new Point(443, 369);
+            DepList.Name = "DepList";
+            DepList.ReadOnly = true;
+            DepList.RowHeadersVisible = false;
+            DepList.RowHeadersWidth = 51;
+            DepList.RowTemplate.Height = 29;
+            DepList.Size = new Size(1333, 627);
+            DepList.TabIndex = 50;
+            DepList.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            DepList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            DepList.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            DepList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            DepList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            DepList.ThemeStyle.BackColor = Color.White;
+            DepList.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            DepList.ThemeStyle.HeaderStyle.BackColor = Color.Teal;
+            DepList.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            DepList.ThemeStyle.HeaderStyle.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DepList.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            DepList.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            DepList.ThemeStyle.HeaderStyle.Height = 25;
+            DepList.ThemeStyle.ReadOnly = true;
+            DepList.ThemeStyle.RowsStyle.BackColor = Color.White;
+            DepList.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            DepList.ThemeStyle.RowsStyle.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DepList.ThemeStyle.RowsStyle.ForeColor = Color.White;
+            DepList.ThemeStyle.RowsStyle.Height = 29;
+            DepList.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            DepList.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            DepList.CellContentClick += DepList_CellContentClick;
             // 
             // pictureBox1
             // 
@@ -170,13 +175,13 @@
             label3.TabIndex = 39;
             label3.Text = "Department Name";
             // 
-            // textBox1
+            // DepNameTb
             // 
-            textBox1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(70, 467);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(298, 32);
-            textBox1.TabIndex = 38;
+            DepNameTb.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DepNameTb.Location = new Point(70, 467);
+            DepNameTb.Name = "DepNameTb";
+            DepNameTb.Size = new Size(298, 32);
+            DepNameTb.TabIndex = 38;
             // 
             // label2
             // 
@@ -189,7 +194,6 @@
             label2.Size = new Size(222, 29);
             label2.TabIndex = 37;
             label2.Text = "Manage Departments";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -219,12 +223,11 @@
             label4.AutoSize = true;
             label4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Teal;
-            label4.Location = new Point(1025, 383);
+            label4.Location = new Point(1006, 327);
             label4.Name = "label4";
             label4.Size = new Size(139, 25);
             label4.TabIndex = 55;
             label4.Text = "Department List";
-            label4.Click += label4_Click;
             // 
             // pictureBox2
             // 
@@ -310,12 +313,30 @@
             pictureBox5.TabIndex = 62;
             pictureBox5.TabStop = false;
             // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.PaleVioletRed;
+            btnDelete.Cursor = Cursors.Hand;
+            btnDelete.FlatAppearance.BorderSize = 0;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.ImageAlign = ContentAlignment.TopCenter;
+            btnDelete.Location = new Point(158, 602);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(94, 53);
+            btnDelete.TabIndex = 64;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+            // 
             // Departments
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1832, 1060);
+            Controls.Add(btnDelete);
             Controls.Add(label8);
             Controls.Add(pictureBox5);
             Controls.Add(label7);
@@ -325,13 +346,13 @@
             Controls.Add(label5);
             Controls.Add(pictureBox2);
             Controls.Add(label4);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(guna2DataGridView1);
+            Controls.Add(EditBtn);
+            Controls.Add(AddBtn);
+            Controls.Add(DepList);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(DepNameTb);
             Controls.Add(label2);
             Controls.Add(panel1);
             Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -340,7 +361,7 @@
             Name = "Departments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Departments";
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DepList).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -354,13 +375,13 @@
 
         #endregion
 
-        private Button button2;
-        private Button button1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Button EditBtn;
+        private Button AddBtn;
+        private Guna.UI2.WinForms.Guna2DataGridView DepList;
         private PictureBox pictureBox1;
         private Panel panel2;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox DepNameTb;
         private Label label2;
         private Label label1;
         private Panel panel1;
@@ -373,5 +394,6 @@
         private PictureBox pictureBox4;
         private Label label8;
         private PictureBox pictureBox5;
+        private Button btnDelete;
     }
 }
