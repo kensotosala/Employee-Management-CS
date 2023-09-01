@@ -44,7 +44,7 @@
             panel1 = new Panel();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            label5 = new Label();
+            lblEmployeeList = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
             label7 = new Label();
@@ -239,16 +239,18 @@
             pictureBox2.TabIndex = 56;
             pictureBox2.TabStop = false;
             // 
-            // label5
+            // lblEmployeeList
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.Teal;
-            label5.Location = new Point(718, 184);
-            label5.Name = "label5";
-            label5.Size = new Size(89, 25);
-            label5.TabIndex = 57;
-            label5.Text = "Employee";
+            lblEmployeeList.AutoSize = true;
+            lblEmployeeList.Cursor = Cursors.Hand;
+            lblEmployeeList.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmployeeList.ForeColor = Color.Teal;
+            lblEmployeeList.Location = new Point(718, 184);
+            lblEmployeeList.Name = "lblEmployeeList";
+            lblEmployeeList.Size = new Size(89, 25);
+            lblEmployeeList.TabIndex = 57;
+            lblEmployeeList.Text = "Employee";
+            lblEmployeeList.Click += lblEmployeeList_Click;
             // 
             // label6
             // 
@@ -343,7 +345,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(label6);
             Controls.Add(pictureBox3);
-            Controls.Add(label5);
+            Controls.Add(lblEmployeeList);
             Controls.Add(pictureBox2);
             Controls.Add(label4);
             Controls.Add(EditBtn);
@@ -387,7 +389,7 @@
         private Panel panel1;
         private Label label4;
         private PictureBox pictureBox2;
-        private Label label5;
+        private Label lblEmployeeList;
         private Label label6;
         private PictureBox pictureBox3;
         private Label label7;

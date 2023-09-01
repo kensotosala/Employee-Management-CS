@@ -111,15 +111,15 @@
             guna2DateTimePicker2.FillColor = Color.Teal;
             guna2DateTimePicker2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DateTimePicker2.ForeColor = Color.White;
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Long;
+            guna2DateTimePicker2.Format = DateTimePickerFormat.Short;
             guna2DateTimePicker2.Location = new Point(69, 609);
             guna2DateTimePicker2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            guna2DateTimePicker2.MinDate = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             guna2DateTimePicker2.Name = "guna2DateTimePicker2";
             guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2DateTimePicker2.Size = new Size(298, 45);
             guna2DateTimePicker2.TabIndex = 52;
-            guna2DateTimePicker2.Value = new DateTime(2023, 8, 29, 17, 22, 25, 575);
+            guna2DateTimePicker2.Value = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             // 
             // guna2DateTimePicker1
             // 
@@ -129,15 +129,15 @@
             guna2DateTimePicker1.FillColor = Color.Teal;
             guna2DateTimePicker1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DateTimePicker1.ForeColor = Color.White;
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
+            guna2DateTimePicker1.Format = DateTimePickerFormat.Short;
             guna2DateTimePicker1.Location = new Point(69, 524);
             guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            guna2DateTimePicker1.MinDate = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2DateTimePicker1.Size = new Size(298, 45);
             guna2DateTimePicker1.TabIndex = 51;
-            guna2DateTimePicker1.Value = new DateTime(2023, 8, 29, 17, 22, 25, 575);
+            guna2DateTimePicker1.Value = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             // 
             // guna2DataGridView1
             // 
@@ -345,15 +345,15 @@
             guna2DateTimePicker3.FillColor = Color.Teal;
             guna2DateTimePicker3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2DateTimePicker3.ForeColor = Color.White;
-            guna2DateTimePicker3.Format = DateTimePickerFormat.Long;
+            guna2DateTimePicker3.Format = DateTimePickerFormat.Short;
             guna2DateTimePicker3.Location = new Point(69, 450);
             guna2DateTimePicker3.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker3.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            guna2DateTimePicker3.MinDate = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             guna2DateTimePicker3.Name = "guna2DateTimePicker3";
             guna2DateTimePicker3.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2DateTimePicker3.Size = new Size(298, 45);
             guna2DateTimePicker3.TabIndex = 57;
-            guna2DateTimePicker3.Value = new DateTime(2023, 8, 29, 17, 22, 25, 575);
+            guna2DateTimePicker3.Value = new DateTime(2023, 8, 31, 0, 0, 0, 0);
             // 
             // label9
             // 

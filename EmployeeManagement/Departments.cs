@@ -120,6 +120,42 @@
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Checks if the department name is empty.
+                if (DepNameTb.Text == "")
+                {
+                    // Shows a message box indicating missing data.
+                    MessageBox.Show("Missing Data!!!");
+                }
+                else
+                {
+                    // Creates the SQL query to Delete the department.
+                    string Query = "DELETE from DepartmentTbl WHERE DepId = {0}";
+                    // Formats the query with the department name.
+                    Query = string.Format(Query, Key);
+                    // Executes the query by calling the SetData method from the Con object.
+                    Con.SetData(Query);
+                    // Calls the ShowDepartments method to update the displayed departments.
+                    ShowDepartments();
+                    // Shows a message box indicating successful delete of the department.
+                    MessageBox.Show("Department Deleted!!!");
+                    // Clears the text box for the department name.
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                // Displays an error message box if an exception occurs during the process.
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void lblEmployeeList_Click(object sender, EventArgs e)
+        {
+            Employess Obj = new();
+            Obj.Show();
+            this.Hide();
         }
     }
 }
